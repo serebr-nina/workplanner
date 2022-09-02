@@ -81,7 +81,6 @@ function saveReminders() {
 // set data in localStorage to print
 function displayReminders() {
     myDay.forEach(function (_thisHour) {
-        console.log(_thisHour.id);
         $("#input" + _thisHour.id).val(_thisHour.reminder);
     })
 }
@@ -132,6 +131,7 @@ myDay.forEach(function (thisHour) {
             "class": "future"
         })
     }
+
     // create save button
     var saveButton = $("<i class='far fa-save fa-lg'></i>")
     var saveTask = $("<button>")
@@ -151,7 +151,7 @@ $(".saveBtn").on("click", function (event) {
     // drop the 'input' prefix
     saveIndex = saveIndex.substring(5);
     myDay[saveIndex].reminder = $(this).siblings(".description").children(".future, .present, .past").val();
-    console.log(saveIndex);
     saveReminders();
     displayReminders();
 });
+
