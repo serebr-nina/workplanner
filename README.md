@@ -18,7 +18,7 @@ The Work Day Scheduler is an easy to use tool for organizing tasks for each hour
 While working on this project, I learned that Moment.js is a great tool for adding calendar/time functionality to an application. I aslo learned to use jQuery to save user input in local storage and work with Bootsrap colomn component.
 
 ## Website
-![Work Day Scheduler](https://serebr-nina.github.io/workplanner/)
+[Work Day Scheduler](https://serebr-nina.github.io/workplanner/)
 
 
 
